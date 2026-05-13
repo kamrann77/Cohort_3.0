@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 200px 12px 200px;
+}
+nav .left img{
+    margin-right: 30px;
+}
+
+nav .left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav p{
+    font-size: 13px;
+}
+
+nav .right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ri-arrow-down-s-line{
+    font-size: 15px;
+}
+.ri-search-line{
+    font-size: 15px;
+}
+.ri-shopping-cart-2-line{
+    font-size: 17px;
+    font-weight: 400; 
+}
+.profile{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1739178656537-ea88ababab9b?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+} 
+
+section{
+    width: 100%;
+    align-self: center;
+    position: relative;
+}
+
+section img {
+    width: 100%;
+    display: block;
+}
+
+.content{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    top: 15%;
+    left: 10%;
+}
+
+.content h1{
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.content button{
+    width: fit-content;
+    padding: 9px;
+    font-size: 15px;
+    background-color: #0067b8;
+    color: white;
+    border: none;
+}
+
+.content p{
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.container {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+.container .box img{
+    width: 38px;
+}
+
+.container .box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.container .box p{
+    color: #0067b8;
+    text-decoration: underline;
+}
+
+.container2{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 0px 200px 0px 200px;
+}
+
+.container2 .box2{
+    height: 75%;
+    width: 40%;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.168);
+}
+ 
+.container2 .box2 img{
+    width: 100%;
+}
+
+.container2 .box2 .text{
+    height: 56.2%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.container2 .box2 .text .insidetext{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text .insidetext h1{ 
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.text .insidetext p{
+    letter-spacing: .5px;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.text button{
+    width: fit-content;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #0067b8;
+    color: white;
+}
+
+
+.container3{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+
+}
+
+
+.image{
+    height: 100%;
+    width: 79%;
+    background-image: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP3-1083x600');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    justify-content: center;
+    padding: 110px;
+
+
+    
+
+}
+
+.image h1{
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+}
+
+.image p{
+    color: white;
+    font-weight: 400;
+    line-height: 25px;
+
+}
+
+.image button{
+    width: fit-content;
+    padding: 10px 22px;
+    border: none;
+    background-color: #0067b8;
+    color: white;
+    font-size: 17px;
+
+
+}
+
+.heading{
+    width: 100%;
+    height: 130px;
+    /* background-color: aqua; */
+    padding: 60px 120px 0px 199px;
+   
+}
+
+.heading h1{
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+.container5 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: stretch; 
+    justify-content: center;
+    gap: 25px;
+    padding: 0px 200px 0px 200px;
+}
+
+
+.container5 .box5 {
+    height: 90%;
+    width: 25%; 
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.168);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container5 .box5 img{
+    width: 100%;
+
+}
+
+.container5 .box5 .text {
+    height: auto;  
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1; 
+}
+
+.container5 .box5 .text .insidetext{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.text .insidetext h1{ 
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.text .insidetext p{
+    letter-spacing: .5px;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.text button{
+    width: fit-content;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #0067b8;
+    color: white;
+}
+
+.container5 .box5 .text button{
+    margin-left: 0; 
+}
+
+
+
+
+
+
+
+
+
+
+.container6{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+
+}
+
+
+.container6 .image1{
+    height: 100%;
+    width: 79%;
+    background-image: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Desktop-AI-Sustainability-Less-Plastic:VP5-1920x600');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    justify-content: center;
+    padding: 110px;
+
+
+    
+
+}
+
+.image1 h1,
+.image1 p,
+.image1 button{
+    text-align: right;
+}
+
+.image1 button {
+    align-self: flex-end;
+}
+.container6 .image1 h1{
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+}
+
+.container6 .image1 p{
+    color: white;
+    font-weight: 400;
+    line-height: 25px;
+
+}
+
+.container6 .image1 button{
+    width: fit-content;
+    padding: 10px 22px;
+    border: none;
+    background-color: #0067b8;
+    color: white;
+    font-size: 17px;
+
+
+}
+
+.container6 .heading{
+    width: 100%;
+    height: 130px;
+    /* background-color: aqua; */
+    padding: 120px 120px 0px 199px;
+   
+}
+
+.container6 .heading h1{
+    font-weight: 500;
+}
+
+
+
+.socials {
+    padding: 30px 200px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+
+
+
+.socials h3 {
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+
+.socials .icons {
+    margin-left: 25px;
+    display: flex;
+    gap: 22px;
+}
+
+.socials .icons i {
+    font-size: 22px;
+    cursor: pointer;
+    color: #333;
+}
+
+.socials .icons i:hover {
+    color: #0067b8;
+}
+
+
+
+footer {
+    background-color: #f2f2f2;
+    border-top: 1px solid #d6d6d6;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 200px;
+    gap: 20px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+
+
+
+.text-box {
+    display: flex;
+
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-box h4 {
+   
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #1a1a1a;
+}
+
+.text-box small {
+    font-size: 12px;
+    color: #444;
+    cursor: pointer;
+
+    line-height: 1.6;
+}
+
+.text-box small:hover {
+    text-decoration: underline;
+
+
+    color: #0067b8;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    padding: 20px 200px;
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+}
+
+
+
+.footer-links small {
+    font-size: 11px;
+    color: #555;
+    cursor: pointer;
+}
+
+.footer-links small:hover {
+    text-decoration: underline;
+    color: #0067b8;
+}
