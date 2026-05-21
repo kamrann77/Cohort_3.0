@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #C9B59C;
+    
+}
+
+
+main{
+    height: 100%;
+    width: 100%;
+    /* background-image: url("https://imgs.search.brave.com/JZ-3v7iac-nx47tptjHTM20voPJRtneEGByISubJjM4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzgv/MDgwLzEzNi9zbWFs/bC9nb2xkLWJhY2tn/cm91bmQtdGV4dHVy/ZS1waG90by5qcGc");
+    background-size: cover; */
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: #710002;
+    padding: 10px;
+    
+}
+
+#sec1{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr 9fr;
+    grid-template-areas: 
+    "header header"
+    "hero-left hero-right";
+    border: 4px solid #710002;
+    border-radius: 15px;
+    
+    
+}
+
+header{
+    
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #710002;
+    border-radius: 15px;
+    padding: 10px 30px;
+    
+}
+
+header h1{
+    font-size: 35px;    
+    font-weight: 850;    
+    letter-spacing: -1.5px;
+}
+
+header .links{
+    display: flex;
+    gap: 35px;
+}
+
+header a{
+    text-decoration: none;
+    color: #710002;
+    letter-spacing: -1px;
+    font-size: 18px;
+    font-weight: 600;
+
+
+
+}
+
+header .search{
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     color: #710002;
+     font-weight: 500;
+     font-size: 18px;
+   
+}
+
+header .search h3{
+     letter-spacing: -1px;
+     font-size: 20px;
+     font-weight: 600;
+     margin-right: 8px;
+}
+
+.hero-left{
+    grid-area: hero-left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-left .top .btns{
+    display: flex;
+    gap: 12px;
+}
+
+.btns button{
+    padding: 5px 13px;
+    background-color: transparent;
+    border: 1px solid #710002;
+    color: #710002;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.hero-left .top h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 52px;
+    font-weight: 900;
+    letter-spacing: -1.8px;
+
+}
+
+.hero-left p{
+    font-size: 20px;
+    
+    font-weight: 500;
+    letter-spacing: -.7 px;
+}
+
+.top>button{
+    padding: 12px 80px;
+    width: fit-content;
+    background-color: #710002;
+    border-radius: 25px;
+    border: none;
+    color: bisque;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;   
+}
+
+.hero-left .top h3{
+    margin-top: 70px;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 52px;
+    font-weight: 800;
+    letter-spacing: -1.8px;
+
+}
+
+.hero-left .top .para p{
+    font-size: 17px;
+     font-weight: 500;
+}
+
+
+
+
+
+.bottom{
+    display: flex;
+    gap: 40px;
+   
+
+}
+
+.bottom i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 65px;
+    border: 3px solid #5A0800;
+    border-radius: 50%;
+    font-size: 50px;
+}
+.hero-right{
+    padding: 30px;
+    
+    grid-area: hero-right;
+}
+
+.hero-right .img{
+    height: 100%;
+    width: 90%;
+    margin-left: 30PX;
+    border-radius: 20px;
+    background-image: url("https://i.pinimg.com/736x/15/2e/03/152e038d4e0a62c71db8d9cb29ab4158.jpg");
+    background-size: cover;
+
+    
+}
+
+
+
+#sec2{
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    border: 4px solid #710002;
+    border-radius: 15px;
+    display: grid;
+    gap: 10px;
+   
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-areas: "heading heading heading heading"
+    "sec2-top-left sec2-top-left sec2-top-center sec2-top-right"
+    "sec2-bottom-left sec2-bottom-center sec2-bottom-center sec2-bottom-right"
+    "see-more see-more see-more see-more";
+
+
+}
+
+.heading{
+    background-color: pink;
+    grid-area: heading;
+    border-radius: 15px;
+}
+.sec2-top-left{
+    background-color: aqua;
+    grid-area: sec2-top-left;
+    border-radius: 15px;
+}
+.sec2-top-center{
+    background-color: aquamarine;
+    grid-area: sec2-top-center;
+    border-radius: 15px;
+}
+.sec2-top-right{
+    background-color: brown;
+    grid-area: sec2-top-right;
+    border-radius: 15px;
+}
+.sec2-bottom-left{
+    background-color: chocolate;
+    grid-area: sec2-bottom-left;
+    border-radius: 15px;
+}
+.sec2-bottom-center{
+    background-color: darkcyan;
+    grid-area: sec2-bottom-center;
+    border-radius: 15px;
+}
+.sec2-bottom-right{
+    background-color: darkkhaki;
+    grid-area: sec2-bottom-right;
+    border-radius: 15px;
+}
+.see-more{
+    background-color: darkorchid;
+    grid-area: see-more;
+    border-radius: 15px;
+}
+
+
+
+
+#sec3{
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    border: 4px solid #710002;
+    border-radius: 15px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "sec3-top-left heading3"
+    "sec3-top-left track1" 
+    "sec3-top-left track2"
+    "sec3-top-left track3"
+    "sec3-top-left track4"
+    "sec3-top-left track5";
+}
+
+.heading3{
+    background-color: aqua;
+    grid-area: heading3;
+    border-radius: 15px;
+}
+.sec3-top-left{
+    background-color: bisque;
+    grid-area: sec3-top-left;
+    border-radius: 15px;
+    border-right: 4px solid #5A0800;
+}
+.track1{
+    background-color: aquamarine;
+    grid-area: track1;
+    border-radius: 15px;
+}
+.track2{
+    background-color: blue;
+    grid-area: track2;
+    border-radius: 15px;
+}
+.track3{
+    background-color: aquamarine;
+    grid-area: track3;
+    border-radius: 15px;
+}
+.track4{
+    background-color: cadetblue;
+    grid-area: track4;
+    border-radius: 15px;
+}
+.track5{
+    background-color: chocolate;
+    grid-area: track5;
+    border-radius: 15px;
+}

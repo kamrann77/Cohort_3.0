@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+   <main id="main">
+
+    <section id="layout">
+
+        <div class="title-section">
+            <div class="portfolio-heading">
+                <h1>Portfolio</h1>
+            </div>
+
+            <div class="title-arrow">
+                <sup><i class="ri-arrow-right-s-line"></i></sup>
+            </div>
+        </div>
+
+
+
+
+
+<div class="left">
+
+    <div class="side-menu">
+        <div class="menu-items">
+            <a href="#">Podcast</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Research</a>
+            <a href="#">Clients</a>
+        </div>
+    </div>
+
+    <div class="card-wrapper">
+        
+        <a href="#" class="about-me-tab">
+    <i class="ri-focus-3-line"></i> About Me
+</a>
+
+        <div class="profile-card">
+            <div class="model-img"></div>
+            <div class="bg-circle"></div>
+            
+            <div class="intro">
+                <h1>
+                    <span class="first">I'm,</span>
+                    <span class="second"><br>Tom<br>Hanks</span>
+                </h1>
+                
+                <div class="profile-footer">
+                    <a href="mailto:inquiry@jondaniel.design" class="email">inquiry@tomhanks.design <i class="ri-mail-line"></i></a>
+                </div>
+            </div> 
+            
+            <div class="rotating-badge">
+                <div class="inner-dot"></div>
+                <svg viewBox="0 0 100 100" class="rotating-text">
+                    <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+                    <text>
+                        <textPath href="#circlePath" startOffset="0%">
+                            MY DESIGN PORTFOLIO 2026 • 
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+        <div class="showcase-card">
+    <video class="showcase-video" src="./assets/edit (2).mp4" muted playsinline></video>
+    
+    <div class="play-btn">
+        <i class="ri-play-fill"></i>
+    </div>
+</div>
+<div class="stats-panel">
+            <a href="#" class="projects">
+                <sup><i class="ri-arrow-right-s-line"></i></sup>
+                <h1>251</h1>
+                <h3>Projects</h3>
+            </a>
+
+            <a href="#" class="awards">
+                <sup><i class="ri-arrow-right-s-line"></i></sup>
+                <h1>156</h1>
+                <h3>Awards</h3>
+            </a>
+        </div>
+
+        <div class="client-card">
+            <sup><i class="ri-arrow-right-s-line"></i></sup>
+        </div>
+
+        <div class="design-awards-card">
+            <div class="img"></div>
+            
+            <a href="#" class="global-awards">
+                 <sup><i class="ri-arrow-right-s-line"></i></sup>
+                <h1>172</h1>
+                <h3>Global Design <br> Awards</h3>
+            </a>
+        </div>
+      
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<script>
+    
+    const card = document.querySelector('.showcase-card') ;  
+    
+    const video = document.querySelector('.showcase-video');
+
+
+    
+    card.addEventListener('mouseenter', () => {
+           video.play();
+    });
+
+    card.addEventListener('mouseleave', () => {
+        video.pause();
+         video.currentTime = 0; 
+    });
+</script>
+
+
+</body>
+</html>

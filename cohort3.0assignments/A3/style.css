@@ -131,7 +131,6 @@ p {
   color: #860e39;
 }
 .clips {
-  width: 80%;
   height: 300px;
   background-color: #860e39;
   border-radius: 20px;
@@ -139,10 +138,11 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 30px;
-  margin-left: 200px;
   margin-bottom: 100px;
   position: absolute;
-  top: 85%;
+  top: 84%;
+  left: 90px;
+  right: 90px;
 }
 .clip {
   background-image: linear-gradient(#860e39, #2c1158);
@@ -159,11 +159,11 @@ footer {
   filter: blur(1);
 }
 #card-1 {
-  background-image: url(./assets/card1.jpg);
+  background-image: url(./assets/card2.jpg);
   background-size: cover;
 }
 #card-2 {
-  background-image: url(./assets/card2.jpg);
+  background-image: url(./assets/card1.jpg);
   background-size: cover;
 }
 #card-3 {
