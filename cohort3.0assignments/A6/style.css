@@ -38,7 +38,7 @@ body {
     z-index: 1000;
     flex-wrap: wrap;
     height: 67px;
-    width: 1504.4px;
+    width: 97vw;
     max-width: calc(100% - 30px); 
 }
 
@@ -885,7 +885,7 @@ body {
     background-color: #e46b1d; 
     border: 1px solid #000;
     border-radius: 12px;
-    width: 440px;
+    width: 380px;
     padding: 60px 50px;
     display: flex;
     flex-direction: column;
