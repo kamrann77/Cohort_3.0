@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+@import '../public/Fonts/fonts.css';
+
+/* Manual dark mode: toggling the `dark` class on <html> drives every dark: utility. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: 'Clash Display', ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+::selection {
+  @apply bg-indigo-500/20;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slidein {
+  animation: slidein 200ms ease-out;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadein {
+  animation: fadein 150ms ease-out;
+}
+
+#app-scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: #d4d4d4 transparent;
+}
+
+.dark #app-scroll-container {
+  scrollbar-color: #404040 transparent;
+}
+
+#app-scroll-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+#app-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #d4d4d4;
+  border-radius: 9999px;
+}
+
+.dark #app-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #404040;
+}
